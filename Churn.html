@@ -1,0 +1,60 @@
+<head>
+  <title>Churn</title>
+</head>
+
+<body>
+  <!--{{> hello}}-->
+  {{> mongo}}
+  {{> neo4j}}
+</body>
+
+
+<!-- MONGO -->
+
+<template name="mongo">
+  Master:
+  <select id="master">
+    {{#each masters}}
+      {{> master}}
+    {{/each}}
+  </select>
+  Slave: 
+  <select id="slave">
+    {{#each slaves}}
+      {{> slave}}
+    {{/each}}
+  </select>
+</template>
+
+<template name="master">
+  <option value="{{name}}">{{name}}</option>
+</template>
+
+<template name="slave">
+  <option value="{{name}}">{{name}}</option>
+</template>
+
+
+<!-- NEO4J -->
+<template name="neo4j">
+  Master:
+  <select id="neomaster">
+    {{#each neomasters}}
+      {{> neomaster}}
+    {{/each}}
+  </select>
+  Slave: 
+  <select id="neoslave">
+    {{#each neoslaves}}
+      {{> neoslave}}
+    {{/each}}
+  </select>
+</template>
+
+<template name="neomaster">
+  <option value="{{name}}">{{name}}</option>
+</template>
+
+<template name="neoslave">
+  <option value="{{name}}">{{name}}</option>
+</template>
