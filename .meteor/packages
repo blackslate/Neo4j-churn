@@ -6,8 +6,5 @@
 
 meteor-platform
 insecure
-ostrio:neo4jreactivity
 meteorhacks:npm
-
-
-npm-container
+ostrio:neo4jreactivity

@@ -6,13 +6,12 @@
   <!--{{> hello}}-->
   <h1>MONGO</h1>
   {{> mongo}}
-  <!--h2>NEO4J</h2>
-  {{> neo4j}}-->
+  <h2>NEO4J</h2>
+  {{> neo4j}}
 </body>
 
 
 <!-- MONGO -->
-
 <template name="mongo">
   Master:
   <select id="master">
@@ -39,7 +38,7 @@
 
 <!-- NEO4J -->
 <template name="neo4j">
-  Master:
+   Master:
   <select id="neomaster">
     {{#each neomasters}}
       {{> neomaster}}
